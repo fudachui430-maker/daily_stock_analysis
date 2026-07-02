@@ -373,10 +373,11 @@ jobs:
           STOCK_LIST_CONFIG: ${{ vars.STOCK_LIST || secrets.STOCK_LIST }}
           MARKET_REVIEW_REGION: ${{ vars.MARKET_REVIEW_REGION || secrets.MARKET_REVIEW_REGION || 'cn' }}
           MARKET_REVIEW_COLOR_SCHEME: ${{ vars.MARKET_REVIEW_COLOR_SCHEME || secrets.MARKET_REVIEW_COLOR_SCHEME || 'green_up' }}
+          # 你的BTC/XAU专属配置
           TICKFLOW_API_KEY: ${{ secrets.TICKFLOW_API_KEY }}
           REALTIME_SOURCE_PRIORITY: ${{ vars.REALTIME_SOURCE_PRIORITY || secrets.REALTIME_SOURCE_PRIORITY }}
           DISABLE_MARKET_INDEX: ${{ vars.DISABLE_MARKET_INDEX || secrets.DISABLE_MARKET_INDEX }}
-          R     # 你的BTC/XAU专属配置EPORT_TITLE: ${{ vars.REPORT_TITLE || secrets.REPORT_TITLE }}
+          REPORT_TITLE: ${{ vars.REPORT_TITLE || secrets.REPORT_TITLE }}
           FORCE_RUN: ${{ github.event.inputs.force_run }}
           # ==========================================
           # 运行配置 ⬅️ 新增！
